@@ -21,8 +21,7 @@ class MenuViews:
                 "Menu Gestion des joueurs",
                 choices=["Ajouter un joueur",
                          "Modifier un joueur",
-                         "Retour au menu principal",
-                         "Quitter"]).ask()
+                         "Retour au menu principal"]).ask()
         )
         return choix
 
@@ -34,8 +33,7 @@ class MenuViews:
                 choices=["Ajouter un tournoi",
                          "Ajouter un joueur au tournoi",
                          "Commencer un tournoi",
-                         "Retour au menu principal",
-                         "Quitter"]).ask()
+                         "Retour au menu principal"]).ask()
         )
         return choix
 
@@ -48,8 +46,7 @@ class MenuViews:
                          "Modifier l'email",
                          "Modifier le mobile",
                          "Modifier le statut",
-                         "Retour au menu principal",
-                         "Quitter"]).ask()
+                         "Retour au menu principal"]).ask()
         )
         return choix
 
@@ -63,7 +60,6 @@ class MenuViews:
                          "Nom dates de tournoi",
                          "Liste des joureurs du tournoi",
                          "Liste des tours du tournoi",
-                         "Retour au menu principal",
-                         "Quitter"]).ask()
+                         "Retour au menu principal"]).ask()
         )
         return choix

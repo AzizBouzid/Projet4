@@ -21,7 +21,7 @@ def menu_principal_control():
             menu_tournoi_control()
         case "Rapports":
             menu_rapport_control()
-        case "Quiter":
+        case "Quitter":
             exit()
 
 
@@ -40,8 +40,6 @@ def menu_joueur_control():
 
         case "Retour au menu principal":
             menu_principal_control()
-        case "Quiter":
-            exit()
 
 
 def modifier_joueur_control():
@@ -62,8 +60,6 @@ def modifier_joueur_control():
             menu_joueur_control()
         case "Retour au menu principal":
             menu_principal_control()
-        case "Quiter":
-            exit()
 
 
 def menu_tournoi_control():
@@ -87,8 +83,6 @@ def menu_tournoi_control():
             menu_tournoi_control()
         case "Retour au menu principal":
             menu_principal_control()
-        case "Quiter":
-            exit()
 
 
 def menu_rapport_control():
@@ -112,5 +106,3 @@ def menu_rapport_control():
             menu_rapport_control()
         case "Retour au menu principal":
             menu_principal_control()
-        case "Quiter":
-            exit()

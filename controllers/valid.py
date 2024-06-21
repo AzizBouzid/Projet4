@@ -1,7 +1,14 @@
 from questionary import ValidationError
 from questionary import Validator
+import os
 import re
+from genericpath import exists
 from tinydb import TinyDB, Query
+
+if not exists(f"{'data'}"):
+    repertoire = os.mkdir(f"{'data'}")
+if not exists(f"{'rapports'}"):
+    repertoire = os.mkdir(f"{'rapports'}")
 
 Valider = Query()
 BDD = TinyDB('data/joueurs.json')

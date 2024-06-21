@@ -2,8 +2,7 @@ from controllers.menu_controllers import menu_principal_control
 
 
 def main():
-    chess = menu_principal_control()
-    chess.run()
+    menu_principal_control()
 
 
 if __name__ == "__main__":
