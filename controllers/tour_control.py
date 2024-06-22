@@ -32,7 +32,7 @@ class ChoixJoueurControl():
         a = 0
         while a < len(identifiant):
             liste_id.append(identifiant[a][0])
-            a = a + 1
+            a += 1
         listes_joueur = []
         data = json.load(open("data/joueurs.json"))
         x = 0
@@ -47,7 +47,7 @@ class ChoixJoueurControl():
                         liste.append(
                             int(data[id][player]['Score_Total']))
                         listes_joueur.append(liste)
-                x = x + 1
+                x += 1
         if len(tourtmp) > 0:
             liste_tmp = tourtmp.get(Valider.Nom == nom).get('Id')
         else:
@@ -61,7 +61,7 @@ class ChoixJoueurControl():
             listes_joueur, key=lambda k: k[3], reverse=True)
         listes_comb = ChoixJoueurControl.combinliste(listes_joueur_trier, 2)
         nombre = len(tour) + 1
-        while nombre < 4:
+        while nombre < len(identifiant):
             while True:
                 date_d = datetime.now().strftime("%d/%m/%Y")
                 heure_d = datetime.now().strftime("%H:%M")
@@ -72,7 +72,7 @@ class ChoixJoueurControl():
                 if reponse is False:
                     return
                 nombre += 1
-                if nombre == 4:
+                if nombre == len(identifiant):
                     BDD.drop_table('TourTmp')
                     return
 
